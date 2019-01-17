@@ -1,12 +1,17 @@
-# flutter-testing-workflow
+[![Build Status](https://travis-ci.org/zanuka/flutter-testing-workflow.svg?branch=master)](https://travis-ci.org/zanuka/flutter-testing-workflow)
+[![codecov](https://codecov.io/gh/zanuka/flutter-testing-workflow/branch/master/graph/badge.svg)](https://codecov.io/gh/zanuka/flutter-testing-workflow)
+
+# flutter testing workflow
 
 - unit tests
 - widget tests
 - integration tests
+- travis config
+- codecov config
 
-## intent
+# unit / widget tests
 
-create solid patterns for all three test types
+    flutter tests --coverage
 
 # integration tests
 

@@ -4,7 +4,7 @@ jobs:
     - stage: Unit Testing
       language: generic
       os: linux
-      env: running unit and widget tests with code coverage
+      env: running unit and widget tests with code coverage 🎱
       before_script:
         - sudo apt-get install -y --no-install-recommends lib32stdc++6 libstdc++6 > /dev/null
         - git clone https://github.com/flutter/flutter.git -b beta
@@ -22,7 +22,7 @@ jobs:
       dist: trusty
       language: generic
       os: linux
-      env: running driver on emulator
+      env: running driver on android emulator 🐬
       # Run integration tests on android
       before_install:
         - sudo apt-get install -y --no-install-recommends lib32stdc++6 libstdc++6 > /dev/null
@@ -66,7 +66,7 @@ jobs:
       os: osx
       # use oldest flutter supported version of xcode
       osx_image: xcode8.0
-      env: running driver on simulator
+      env: running driver on ios simulator 🍏
       # Run integration tests on ios
       before_install:
         - open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app
@@ -82,9 +82,3 @@ jobs:
         - flutter precache
         - flutter doctor -v
         - flutter devices
-
-    - stage: Ready to deploy
-      os: osx
-      language: generic
-      env: not implemented 🤓
-      script: echo "Deploying to store ..."
