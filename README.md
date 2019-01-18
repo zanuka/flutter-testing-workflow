@@ -9,6 +9,8 @@
 - travis config
 - codecov config
 
+shout out to the [mmcc007/flutter_app](https://github.com/mmcc007/flutter_app) for the excellent travis config example
+
 # unit / widget tests
 
     flutter tests --coverage
